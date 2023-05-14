@@ -3,10 +3,12 @@
 }
 
 html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #FFF7ED;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -146,7 +148,7 @@ header a:hover {
 
 /*** VAN PAGES ***/
 .van-list-container {
-    padding-inline: 23px
+    padding-inline: 23px;
 }
 
 .van-list {
