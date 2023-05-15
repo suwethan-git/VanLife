@@ -18,7 +18,7 @@ export default function Router() {
         <BrowserRouter>
         <Routes>
             <Route element={<Layout />}>
-                <Route path="/" element={<Home />} />
+                <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="vans" element={<Vans />}/>
                 <Route path="vans/:id" element={<VanDetails />} />
