@@ -8,10 +8,11 @@ import Income from "./components/Income";
 import Reviews from "./components/Reviews";
 import Dashboard from "./components/Dashboard";
 import HostLayout from "./components/HostLayout";
+import { makeServer } from "./Server";
+
+makeServer()
 
 import "./App.css";
-
-import "./Server"
 
 export default function Router() {
     return (
