@@ -4,6 +4,11 @@ import About from "./components/About"
 import Vans from "./components/Vans";
 import VanDetails from "./components/VanDetails";
 import Layout from "./components/Layout";
+import Income from "./components/Income";
+import Reviews from "./components/Reviews";
+import Dashboard from "./components/Dashboard";
+import HostLayout from "./components/HostLayout";
+
 import "./App.css";
 
 import "./Server"
@@ -14,9 +19,15 @@ export default function Router() {
         <Routes>
             <Route element={<Layout />}>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/vans" element={<Vans />}/>
-                <Route path="/vans/:id" element={<VanDetails />} />
+                <Route path="about" element={<About />} />
+                <Route path="vans" element={<Vans />}/>
+                <Route path="vans/:id" element={<VanDetails />} />
+
+                <Route path="/host" element={<HostLayout />}>
+                    <Route index element={<Dashboard />}/>
+                    <Route path="income" element={<Income />} />
+                    <Route path="reviews" element={<Reviews />} />
+                </Route>
             </Route>
         </Routes>
         </BrowserRouter>
